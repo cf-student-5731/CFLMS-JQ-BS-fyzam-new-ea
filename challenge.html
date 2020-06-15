@@ -10,43 +10,65 @@
 .box {
     border: 1vw solid transparent;
 	background-clip: padding-box;
-	height: 16vw;
+	background-color: #A97F7F;
+}
+
+.container-fluid {
+	background-color: lightgray;
+}
+
+.nav {
+	height: 70px;
+	color: white;
+	background-color: #BE3F40;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5em;
+}
+
+.chapter {
+	margin-top: 3vw;
 }
 
 
 	</style>
 </head>
 <body>
+
+	<div class="nav">
+		YouTube
+	</div>
 	
 	<div class ="container-fluid">
-		<p>Trending</p>
+		<p class="chapter">Trending</p>
 		<div class="row">			
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
 		</div>
 
 		<p>Music</p>
 		<div class="row">			
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
 		</div>
 
 		<p>Humor</p>
 		<div class="row">			
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
-			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 bg-info box">test</div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
+			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 box"></div>
 		</div>
 
 
@@ -60,9 +82,10 @@
 
 <script>
 
-$( window ).resize(function() {
-	$('.box').height($('.box').width());
-});
+	$('.box').height($('.box').width());	
+	$( window ).resize(function() {
+		$('.box').height($('.box').width());
+	});
 
 </script>
 
