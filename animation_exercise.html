@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>jQuery animation</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<style>
+		/* * { padding: 0; margin: 0; } */
+		body { font-family: sans-serif; font-size: 100%; margin: 10px; color: #222; background-color: #eee; }
+		#animate {top: 80px; left: 100px; width: 180px; height: 120px; font-size: 2em; text-align: center; line-height: 118px; color: #fff; background-color: #00c; border: 2px solid #006; border-radius: 5px; }
+	</style>
+</head>
+<body>
+
+	<h1>jQuery Animation</h1>
+
+	<div id="animate">ANIMATE</div>
+
+	<div>
+		<ul class="toDo">
+			<li>Monday</li>
+			<li>Tuesday</li>
+			<li>Wednesday</li>
+			<li>Thursday</li>
+			<li>Friday</li>
+		</ul>
+	</div>
+
+	<script>
+		let a = $('#animate');
+		a.css('display', 'none');
+		a.fadeIn(5000).fadeOut(5000);
+
+		for(let i = 0; i < 5; i++){
+
+			$(`.toDo li:eq(${i})`).on('click', function(){
+				console.log(i);
+				$(this).remove();		
+			});
+		};
+		//$('body').append(`<ul>test</ul>`);
+
+
+	</script>
+
+</body>
+</html>
